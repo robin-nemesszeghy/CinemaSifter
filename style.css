@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+li {
+  list-style-type: none;
+}
+
+/*
+
+NAVIGATION
+
+*/
+
+nav {
+  height: 100px;
+  display: flex;
+}
+
+.nav__container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav__logo--img {
+  width: 48px;
+  height: 48px;
+}
+
+.nav__logo--title {
+  width: 150px;
+}
+
+.nav__links {
+  display: flex;
+}
+
+.nav__link {
+  color: #0a1f44;
+  font-size: 18px;
+  margin-left: 48px;
+  padding: 8px;
+  font-weight: 600;
+}
+
+.nav__link--btn {
+  background-color: #027d9f;
+  color: #ffffff;
+  padding: 12px 40px;
+  border-radius: 50px;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: background-color 600ms ease;
+}
+
+.nav__link--btn:hover {
+  background-color: #064e80;
+}
+
+/*
+
+HEADER
+
+*/
+
+header {
+  height: calc(100vh-100px);
+}
+
+.header__container {
+  width: 100%;
+  max-width: 720px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.header__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: #027d9f;
+  font-size: 50px;
+  text-align: center;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #0a1f44;
+  margin-bottom: 40px;
+}
+
+.input__wrapper {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #0a1f44;
+  color: #0a1f44;
+  display: inline-block;
+  height: 70px;
+  line-height: 40px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 24px;
+  padding-left: 25px;
+  transition: all 50ms ease;
+}
+
+input:focus {
+  border: 2px solid #064e80;
+}
+
+button {
+  width: 200px;
+  margin-left: 20px;
+  font-size: 40px;
+  color: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #027d9f;
+  background-color: #027d9f;
+  box-shadow: 7px 7px 14px rgba(93, 160, 204, 0.3);
+  cursor: pointer;
+  transition: all 600ms ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1px 6px;
+}
+
+button:hover {
+  background-color: #51bcda;
+}
+
+.input__btn {
+  width: 40px;
+  height: 40px;
+}
+
+.header__img--wrapper {
+  padding: 28px;
+}
+
+.header__img {
+  width: 100%;
+  height: 100%;
+  max-height: 42vh;
+}
