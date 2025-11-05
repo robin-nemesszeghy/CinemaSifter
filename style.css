@@ -225,32 +225,29 @@ MOBILE MENU
 }
 
 .menu__backdrop {
-  /* position: fixed; */
   position: absolute;
   background-color: #242424;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 99;
+  z-index: 100;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 300ms ease;
   opacity: 0;
   visibility: hidden;
-  transform: translate(100%);
 }
 
-.menu__open {
+.menu--open .menu__backdrop {
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu--open {
   max-height: 100vh;
   overflow: hidden;
-}
-
-.menu__open .menu__backdrop {
-  visibility: visible !important;
-  opacity: 1;
-  transform: translate(0);
 }
 
 .btn__menu--close {
