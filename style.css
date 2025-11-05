@@ -459,6 +459,7 @@ HEADER
 }
 
 .btn__clear {
+  margin-left: 24px;
   display: flex;
   cursor: pointer;
   max-height: 48px;
