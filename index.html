@@ -28,8 +28,20 @@
             />
           </figure>
           <ul class="nav__links">
-            <li><a class="nav__link" href="./index.html">Home</a></li>
-            <li><a class="nav__link" href="./film.html">FlickFetch</a></li>
+            <li>
+              <a
+                class="nav__link link__hover-effect link__hover-effect--teal"
+                href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="nav__link link__hover-effect link__hover-effect--black"
+                href="./film.html"
+                >FlickFetch</a
+              >
+            </li>
             <li><a class="nav__link nav__link--btn" href="#">CONTACT</a></li>
           </ul>
           <button class="btn__menu" onclick="openMenu()">
@@ -68,7 +80,7 @@
                 type="text"
                 placeholder="Search by Movie Name or Keyword"
               />
-              <button class="header__input--btn">
+              <button class="header__input--btn" onclick="searchPending()">
                 <svg
                   class="header__input--icon"
                   data-v-2a11e7ca=""
@@ -88,6 +100,12 @@
                     class=""
                   ></path>
                 </svg>
+                <div class="btn__overlay btn__overlay--loading">
+                  <i class="fa-solid fa-spinner"></i>
+                </div>
+                <div class="btn__overlay btn__overlay--success">
+                  <i class="fa-solid fa-check"></i>
+                </div>
               </button>
             </div>
           </div>
