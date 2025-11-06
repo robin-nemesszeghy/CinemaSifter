@@ -33,21 +33,21 @@
                 /></a>
               </figure>
               <button class=".button btn__clear" onclick="clearInput()">
-                CLEAR ALL
+                RESET
               </button>
             </div>
           </nav>
         </div>
         <div class="search__container">
           <h1 class="film__header--title">Fetch your Flick</h1>
-          <!-- search box -->
+          <!-- Search Box -->
           <div class="search__element">
             <!-- (((search__element = "search-element"))) -->
             <input
-              type="text"
-              class="form__control"
-              placeholder="Search Movie by Title..."
               id="movie-search-box"
+              class="form__control"
+              type="text"
+              placeholder="Search Movie by Title..."
               onkeyup="findMovies()"
               onclick="findMovies()"
             />
@@ -57,18 +57,18 @@
           </div>
           <div class="list__container">
             <div class="search__list" id="search-list">
-              <!-- list here -->
+              <!-- List -->
               <!-- <div class = "search__list--item">
                       <div class = "search__item--thumbnail">
                         <img src = "medium-cover.jpg">
-                       </div>
+                      </div>
                       <div class = "search__item--info">
                         <h3>Guardians of the Galaxy Vol. 2</h3>
                         <p>2017</p>
                       </div>
-                </div> -->
+                    </div> -->
             </div>
-            <!-- end of search box -->
+            <!-- End of Search Box -->
           </div>
           <div class="header__overlay"></div>
         </div>
@@ -80,47 +80,47 @@
         <h3 class="search__results--title">Search Results:</h3>
         <select
           id="filter"
-          onchange=""
           class="filter__class"
+          onchange="filterMovies(event)"
           onclick="clearInput()"
         >
-          <option value="" selected="" disabled="" class="filter__option">
-            Click to Sort Your Flicks
+          <option class="filter__option" value="" disabled selected>
+            Sort Your Flicks
           </option>
-          <option value="Oldest_To_Newest" class="filter__option">
+          <option class="filter__option" value="Oldest_To_Newest">
             Oldest to Newest
           </option>
-          <option value="Newest_To_Oldest" class="filter__option">
+          <option class="filter__option" value="Newest_To_Oldest">
             Newest to Oldest
           </option>
-          <option value="A_To_Z" class="filter__option">
+          <option class="filter__option" value="A_To_Z">
             Alphabetically A -&gt; Z
           </option>
-          <option value="Z_To_A" class="filter__option">
+          <option class="filter__option" value="Z_To_A">
             Alphabetically Z -&gt; A
           </option>
         </select>
       </div>
       <div class="result__container">
         <div id="result-grid">
-          <!-- movie information here -->
+          <!-- Movie Info -->
           <!-- <div class = "movie-poster">
-                        <img src = "medium-cover.jpg" alt = "movie poster">
-                    </div>
-                    <div class = "movie-info">
-                        <h3 class = "movie-title">Guardians of the Galaxy Vol. 2</h3>
-                        <ul class = "movie-misc-info">
-                            <li class = "year">Year: 2017</li>
-                            <li class = "rated">Ratings: PG-13</li>
-                            <li class = "released">Released: 05 May 2017</li>
-                        </ul>
-                        <p class = "genre"><b>Genre:</b> Action, Adventure, Comedy</p>
-                        <p class = "writer"><b>Writer:</b> James Gunn, Don Abnett, Andy Lanning</p>
-                        <p class = "actors"><b>Actors: </b>Chris Pratt, Zoe Saldana, Dave Bautista</p>
-                        <p class = "plot"><b>Plot:</b> The Guardians struggle to keep together as a team while dealing with their personal family issues, notably Star-Lord's ecounter with his father the ambitious celestial being Ego.</p>
-                        <p class = "language"><b>Language:</b> English</p>
-                        <p class = "awards"><b><i class = "fas fa-award"></i></b> Nominated for 1 Oscar</p>
-                    </div> -->
+                  <img src = "medium-cover.jpg" alt = "movie poster">
+                </div>
+                <div class = "movie-info">
+                  <h3 class = "movie-title">Guardians of the Galaxy Vol. 2</h3>
+                  <ul class = "movie-misc-info">
+                    <li class = "year">Year: 2017</li>
+                    <li class = "rated">Ratings: PG-13</li>
+                    <li class = "released">Released: 05 May 2017</li>
+                  </ul>
+                  <p class = "genre"><b>Genre:</b> Action, Adventure, Comedy</p>
+                  <p class = "writer"><b>Writer:</b> James Gunn, Don Abnett, Andy Lanning</p>
+                  <p class = "actors"><b>Actors: </b>Chris Pratt, Zoe Saldana, Dave Bautista</p>
+                  <p class = "plot"><b>Plot:</b> The Guardians struggle to keep together as a team while dealing with their personal family issues, notably Star-Lord's ecounter with his father the ambitious celestial being Ego.</p>
+                  <p class = "language"><b>Language:</b> English</p>
+                  <p class = "awards"><b><i class = "fas fa-award"></i></b> Nominated for 1 Oscar</p>
+                </div> -->
         </div>
       </div>
     </div>
