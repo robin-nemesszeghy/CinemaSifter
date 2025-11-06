@@ -836,20 +836,14 @@ RESPONSIVENESS
     padding-top: 200px;
   } */
 
-  #filter {
+  .search__results--title {
     color: #ffffff;
   }
 
-  .search__results--title {
+  #filter {
     background-color: #ffffff;
   }
 }
-
-/* @media (max-width: 1600px) {
-  .search__sort {
-    padding-top: 150px;
-  }
-} */
 
 /* LAPTOPS */
 @media (max-width: 1200px) {
