@@ -827,13 +827,19 @@ RESPONSIVENESS
 */
 
 /* LARGE SCREENS, DESKTOPS, LARGE TVS */
-@media (min-width: 1540px) {
+@media (min-width: 1600px) {
   header {
     padding-top: 80px;
   }
 
   .search__sort {
     padding-top: 200px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .search__sort {
+    padding-top: 150px;
   }
 }
 
