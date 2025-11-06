@@ -827,7 +827,7 @@ RESPONSIVENESS
 */
 
 /* LARGE SCREENS, DESKTOPS, LARGE TVS */
-@media (min-width: 1600px) {
+@media (min-width: 1700px) {
   header {
     padding-top: 76px;
   }
@@ -837,7 +837,7 @@ RESPONSIVENESS
   } */
 
   .search__results--title {
-    color: #ffffff;
+    color: #242424;
     background-color: #d2e8ee;
     border-radius: 10px;
     padding: 8px;
