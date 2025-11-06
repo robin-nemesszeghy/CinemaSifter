@@ -827,7 +827,7 @@ RESPONSIVENESS
 */
 
 /* LARGE SCREENS, DESKTOPS, LARGE TVS */
-@media (min-width: 1540px) and (max-width: 1920px) {
+@media (min-width: 1540px) {
   header {
     padding-top: 80px;
   }
@@ -964,7 +964,7 @@ RESPONSIVENESS
     font-size: 32px;
   }
 
-  .nav__container {
+  .flick__nav {
     flex-direction: column;
     padding-top: 20px;
   }
