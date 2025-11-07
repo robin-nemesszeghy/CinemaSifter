@@ -950,6 +950,14 @@ RESPONSIVENESS
     padding-top: 20px;
   }
 
+  .search__results--title {
+    color: #242424;
+    background-color: #d2e8ee;
+    border-radius: 10px;
+    padding: 8px;
+    box-shadow: 2px 2px 7px rgba(15, 17, 18, 0.3);
+  }
+
   .search__sort {
     padding-top: 200px 0 200px 0;
   }
